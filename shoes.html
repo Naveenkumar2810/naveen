@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoes</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+   <div class="header">
+      <span class="titlecard">shoes</span>
+       <div class="leftside">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">price</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+       </div>
+  </div>
+  <div id="center-box">
+      <div class="sample-img">        
+            <div id="img-div">
+                <img id="small-img" onclick="mainpic('images/SHOE1.png','linear-gradient(to right,white,#dc2d31)');"
+                src="images/SHOE1.png">
+            </div>
+            <div id="img-div">
+                <img id="small-img" onclick="mainpic('images/SHOE2.png','linear-gradient(to right,white,#0083F7)');"
+                src="images/SHOE2.png">
+           </div>
+           <div id="img-div">
+                <img id="small-img" onclick="mainpic('images/SHOE3.png','linear-gradient(to right,white,#FE893D)');"
+                 src="images/SHOE3.png">
+           </div>
+     </div> 
+     <div class="org-img"><img src="images/SHOE1.png" id="display"></div>
+     <p id="quote">Bring<br>power to your<br>steps🔥🔥</p>              
+  </div>
+  <script>
+      function mainpic(source,color){
+         document.getElementById("display").src=source;
+         document.getElementById("center-box").style.background=color;
+        };
+  </script>
+</body>
+</html>
